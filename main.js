@@ -213,3 +213,279 @@ if (isPrime(numero) == true) {
 } else {
   alert("Il numero inserito non è un numero primo.");
 } */
+
+// JSnacks Blocco 4
+
+// JSnack 1A
+// JSnack 1B
+
+// Creare un oggetto palla che abbia le seguenti proprietà. Nome = palla Peso = 10
+// Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
+
+/* const palla = {
+  nome: "palla",
+  peso: 10,
+};
+palla.peso = Number(prompt("Inserisci peso palla"));
+console.log(palla); */
+
+// JSnack 2
+
+// Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. Stampare a schermo la bici con peso minore.
+
+/* const bici = [
+  (trek = {
+    nome: "madone",
+    peso: 9.7,
+  }),
+  (specialized = {
+    nome: "boh",
+    peso: 9.1,
+  }),
+];
+for (const peso in bici) {
+  if (trek.peso < specialized.peso) {
+    console.log(trek);
+  } else if (trek.peso > specialized.peso) {
+    console.log(specialized);
+  }
+}
+ */
+// JSnack 3
+
+// Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza. Calcolare perimetro e area.
+
+/* const triangolo = {
+  base: 10,
+  altezza: 10,
+};
+const area = (triangolo.base * triangolo.altezza) / 2;
+
+function pitagora(latoA, latoB) {
+  return Math.sqrt(latoA ** 2 + latoB ** 2);
+}
+
+const ipotenusa = pitagora(triangolo.base, triangolo.altezza);
+
+perimetro = triangolo.base + triangolo.altezza + ipotenusa;
+console.log(area);
+console.log(perimetro); */
+
+// JSnack 4A
+// JSnack 4B
+
+// Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti. Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+// Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti
+
+/* const squadre = [
+  {
+    nome: "Milan",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Juventus",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Napoli",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Inter",
+    punti: 0,
+    falli: 0,
+  },
+];
+
+squadre.forEach((item) => {
+  item.punti = Math.floor(Math.random() * 10) + 1;
+  item.falli = Math.floor(Math.random() * 10) + 1;
+});
+
+console.log(squadre); */
+
+// JSnacks Blocco 5
+
+// JSnack 1
+
+// Crea 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine.
+
+/* const zucchine = [
+  {
+    varietà: "nero di Milano",
+    peso: 2,
+    lunghezza: 10,
+  },
+  {
+    varietà: "romanesco",
+    peso: 3,
+    lunghezza: 9,
+  },
+  {
+    varietà: "lunga fiorentina",
+    peso: 4,
+    lunghezza: 12,
+  },
+  {
+    varietà: "siciliano",
+    peso: 3,
+    lunghezza: 15,
+  },
+  {
+    varietà: "striata di Napoli",
+    peso: 2,
+    lunghezza: 7,
+  },
+  {
+    varietà: "bianca triestina",
+    peso: 1,
+    lunghezza: 6,
+  },
+  {
+    varietà: "rigata pugliese",
+    peso: 2,
+    lunghezza: 7,
+  },
+  {
+    varietà: "tondo di Piacenza",
+    peso: 5,
+    lunghezza: 5,
+  },
+  {
+    varietà: "tondo di Nizza",
+    peso: 4,
+    lunghezza: 4,
+  },
+  {
+    varietà: "tondo di Firenze",
+    peso: 3,
+    lunghezza: 6,
+  },
+];
+let sum = 0;
+for (let i = 0; i < zucchine.length; i++) {
+  sum += zucchine[i].peso;
+}
+console.log(sum); */
+
+// JSnack 2
+
+// Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+
+/* function invert(word) {
+  return word.split("").reverse().join("");
+}
+console.log(invert("Andrea")); */
+
+// JSnack 3
+
+// Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno o più di 15cm Infine stampa separatamente quanto pesano i due gruppi di zucchine
+
+/* const zucchine = [
+  {
+    varietà: "nero di Milano",
+    peso: 2,
+    lunghezza: 16,
+  },
+  {
+    varietà: "romanesco",
+    peso: 3,
+    lunghezza: 14,
+  },
+  {
+    varietà: "lunga fiorentina",
+    peso: 4,
+    lunghezza: 17,
+  },
+  {
+    varietà: "siciliano",
+    peso: 3,
+    lunghezza: 20,
+  },
+  {
+    varietà: "striata di Napoli",
+    peso: 2,
+    lunghezza: 12,
+  },
+  {
+    varietà: "bianca triestina",
+    peso: 1,
+    lunghezza: 11,
+  },
+  {
+    varietà: "rigata pugliese",
+    peso: 2,
+    lunghezza: 12,
+  },
+  {
+    varietà: "tondo di Piacenza",
+    peso: 5,
+    lunghezza: 10,
+  },
+  {
+    varietà: "tondo di Nizza",
+    peso: 4,
+    lunghezza: 9,
+  },
+  {
+    varietà: "tondo di Firenze",
+    peso: 3,
+    lunghezza: 11,
+  },
+];
+const zucchineCorte = [];
+const zucchineLunghe = [];
+for (var i = 0; i < zucchine.length; i++) {
+  if (zucchine[i].lunghezza < 15) {
+    zucchineCorte.push(zucchine[i]);
+  } else if (zucchine[i].lunghezza > 15) {
+    zucchineLunghe.push(zucchine[i]);
+  }
+}
+let pesoZucchineCorte = 0;
+let pesoZucchineLunghe = 0;
+for (var i = 0; i < zucchineCorte.length; i++) {
+  pesoZucchineCorte += zucchineCorte[i].peso;
+}
+for (var i = 0; i < zucchineLunghe.length; i++) {
+  pesoZucchineLunghe += zucchineLunghe[i].peso;
+}
+console.log(pesoZucchineCorte);
+console.log(pesoZucchineLunghe); */
+
+// JSnack 4
+
+// Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+/* const arrayLettere = ["a", "b", "c"];
+const arrayNumeri = [1, 2, 3];
+
+function altArrays(arr1, arr2) {
+  const fusion = [];
+  for (let i = 0; i < arr1.length; i++) {
+    fusion.push(arr1[i]);
+    fusion.push(arr2[i]);
+  }
+  return fusion;
+}
+console.log(altArrays(arrayLettere, arrayNumeri));
+ */
+
+//  JSnack 5
+
+// Scrivi una funzione che accetti tre argomenti: un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array). La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
+
+const myArray = ["Milan", "Inter", "Juventus", "Roma", "Lazio", "Napoli"];
+function myVar(array, a, b) {
+  const newArray = [];
+  if (a < b && b <= array.length) {
+    for (let i = a; i < b; i++) {
+      newArray.push(array[i]);
+    }
+    return newArray;
+  }
+}
+console.log(myVar(myArray, 1, 4));
